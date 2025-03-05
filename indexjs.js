@@ -1,10 +1,10 @@
-/*$(document).ready(function(){
-    $("#toggleTheme").click(function(){
+$(document).ready(function(){
+    $("#themeToggleBtn").click(function(){
         $("body").toggleClass("dark-mode");
     });
 });
 
-// Dark mode styles
+// style for dark mode
 $('head').append(`
     <style>
     .dark-mode {
@@ -25,18 +25,6 @@ $('head').append(`
         color: #1a202c;
     }
     </style>
-`);*/
-const themeToggleBtn = document.getElementById('themeToggle');
-
-themeToggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-
-  // Change button text
-  if (document.body.classList.contains('dark-mode')) {
-    themeToggleBtn.textContent = 'Switch to Light Mode';
-  } else {
-    themeToggleBtn.textContent = 'Switch to Dark Mode';
-  }
-});
+`);
 
 
