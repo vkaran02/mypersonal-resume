@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     $("#toggleTheme").click(function(){
         $("body").toggleClass("dark-mode");
     });
@@ -25,4 +25,18 @@ $('head').append(`
         color: #1a202c;
     }
     </style>
-`);
+`);*/
+const themeToggleBtn = document.getElementById('themeToggle');
+
+themeToggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  // Change button text
+  if (document.body.classList.contains('dark-mode')) {
+    themeToggleBtn.textContent = 'Switch to Light Mode';
+  } else {
+    themeToggleBtn.textContent = 'Switch to Dark Mode';
+  }
+});
+
+
